@@ -88,6 +88,7 @@ export abstract class Slider {
 
     const el = root.querySelector(`[part=${part}]`) as HTMLElement;
     el.addEventListener('mousedown', this);
+    el.addEventListener('mouseup', this);
     el.addEventListener('touchstart', this);
     el.addEventListener('keydown', this);
     this.el = el;
